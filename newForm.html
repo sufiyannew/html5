@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form>
+        <h1>Event Register</h1>
+
+        <label for="email">Name:</label><br>
+        <input type="email" id="email"><br><br>
+
+        <label for="text">Email:</label><br>
+        <input type="text" id="text"><br><br>
+
+        <label for="phone">Phone</label><br>
+        <input type="tel" id="phone"><br><br>
+
+        <label for="fileselector1">Resume</label>
+        <input type="file" name="file" id="fileselector1"><br><br>
+
+        <label for="number1">Experiance</label>
+        <input type="number" name="number" id="number1" min="0" max="50" ><br><br>  
+
+        
+
+        <label for="selector1">Occupation</label><br>
+        <select name="Occupy" id="selector1">
+            <option value=student"">Student</option>
+            <option value="fresher">Fresher</option>
+            <option value="other">Other</option>
+        </select><br><br>
+
+        <fieldset>
+            <legend>Topic of interest</legend>
+
+            <label for="cheakbox1">HTML</label>
+            <input type="checkbox" name="checkbox" id="cheakbox1">
+
+            <label for="cheakbox2">CSS</label>
+            <input type="checkbox" name="checkbox" id="cheakbox2>
+
+            <label for="cheakbox3">Java Script</label>
+            <input type="checkbox" name="checkbox" id="cheakbox3">
+
+        </fieldset> 
+
+        <label for="textArea">Comment</label><br>
+        <textarea name="textArea" id="textArea" cols="30" rows="10" placeholder="Enter Here"></textarea><br>
+
+        <button>Regiter</button>
+    </form>
+</body>
+</html>
