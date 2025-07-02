@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Transformations</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #0d1117;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            perspective: 1000px; /* Enable 3D depth */
+        }
+        .item {
+            width: 150px;
+            height: 150px;
+            background-color: #918e57;
+            border: 2px solid #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: white;
+            transition: transform 0.8s ease, background-color 0.4s;
+            transform-style: preserve-3d; /* Maintain 3D space for child transforms */
+        }
+        /* Rotate effects */
+        #rotate-x:hover {
+            transform: rotateX(180                                                                                                                                           deg);
+            background-color: #ff6347;
+        }
+        #rotate-y:hover {
+            transform: rotateY(180deg);
+            background-color: #1e90ff;
+        }
+        #rotate-z:hover {
+            transform: rotateZ(180deg);
+            background-color: #32cd32;
+        }
+        /* Translate along axes */
+        #translate-x:hover {
+            transform: translateX(80px) rotateY(30deg);
+            background-color: #ff69b4;
+        }
+        #translate-y:hover {
+            transform: translateY(80px) rotateX(30deg);
+            background-color: #ffa500;
+        }
+        #translate-z:hover {
+            transform: translateZ(50px) rotateZ(30deg);
+            background-color: #8a2be2;
+        }
+        /* Scaling effects */
+        #scale-x:hover {
+            transform: scaleX(1.8);
+            background-color: #ffd700;
+        }
+        #scale-y:hover {
+            transform: scaleY(1.8);
+            background-color: #00fa9a;
+        }
+        #scale-z:hover {
+            transform: scaleZ(1.8);
+            background-color: #ff4500;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="rotate-x">Rotate X</div>
+        <div class="item" id="rotate-y">Rotate Y</div>
+        <div class="item" id="rotate-z">Rotate Z</div>
+        <div class="item" id="translate-x">Translate X</div>
+        <div class="item" id="translate-y">Translate Y</div>
+        <div class="item" id="translate-z">Translate Z</div>
+        <div class="item" id="scale-x">Scale X</div>
+        <div class="item" id="scale-y">Scale Y</div>
+        <div class="item" id="scale-z">Scale Z</div>
+    </div>
+</body>
+</html>

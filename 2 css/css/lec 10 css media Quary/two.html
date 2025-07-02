@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Mob&PC</title>
+    <style>
+        .container{
+            background-color: #47c4c0;
+            border: 2px solid black;
+            margin: 10px;
+            padding: 10px;
+            max-height: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        p{
+            width: 50px;
+            height: 50px;
+            font-size: 16px;
+            margin: 10px;
+            padding: 10px;
+            border: 2px solid black;
+           
+        }
+        @media(max-width: 640px){
+            .container{
+            flex-direction: column-reverse;
+            align-items: center;
+            }
+            .box1{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+            <p>Text1</p>
+            <p>Text2</p>
+        </div>
+        <div class="box2">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8OX0Bt9dkBYVEb7y6f7Zhh1BOHNxfVIkY_A&s" alt="love babbar">
+        </div>
+    </div>
+</body>
+</html>

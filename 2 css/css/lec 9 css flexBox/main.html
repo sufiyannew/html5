@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justify content</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            background-color: #676761;
+            border: 5px solid black;
+            margin: 5px;
+            padding: 5px;
+            height: 500px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+
+            /*flex-wrap: wrap;
+            flex-direction: column;
+            flex-direction: column-reverse;*/
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            border: 2px solid brown;
+            margin: 5px;
+            padding: 5px;
+            border-radius: 50%;
+        }
+        #box1 {
+            background-color: red;
+        }
+        #box2 {
+            background-color: blue;
+        }
+        #box3 {
+            background-color: green;
+        }
+        #box4 {
+            background-color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+    </div>
+</body>
+</html> 

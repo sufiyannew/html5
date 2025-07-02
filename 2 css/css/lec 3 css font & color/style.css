@@ -1,0 +1,38 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.para1{
+    background-color: #e6dbdb;
+
+    /* border-style: solid;
+    border-width: 2px;
+    border-color: aqua; */
+    /* border: solid brown 5px; */
+    /* border-radius: 10px; */
+    /* border-top-left-radius: 20px;
+    border-bottom: solid black;s */
+    border: solid black 3px;
+    border-radius: 10px;
+    width: 400px;
+    height: 100px;
+}
+
+span{
+
+    background: #342e2e;
+    border: solid rgb(0, 0, 0) 5px;
+    border-radius: 5px;
+    
+}
+
+.para3{
+    background-color: #9c9696;
+    border: solid black 5px;
+    width: 400px;
+    padding: 50px;
+    margin: 50px;
+
+}
+

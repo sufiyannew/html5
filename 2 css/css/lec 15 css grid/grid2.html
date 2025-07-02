@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid2</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+        .container {
+            height: 100%;
+            width: 100%;
+            background-color: #22173b;
+            display: grid;
+            gap: 0.5rem;
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-columns: repeat(1, 1fr);
+            border: 2px solid red; /* Debug border */
+        }
+
+        .item {
+            width: 100px;
+            height: 100px;
+            background-color: #14a9c7;
+            border: 5px solid white;
+            place-self: center;
+        }
+        /* there is more proparty like align-self, justify-self, place-self(important) */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+    </div>
+</body>
+</html>

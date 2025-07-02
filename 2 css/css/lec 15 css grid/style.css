@@ -1,0 +1,73 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    background-color: #0d2741;
+    display: grid;
+    padding: 4rem;
+    border: 2px solid yellow;
+    gap: 0.2rem;
+    /* grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr); */
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    
+
+}
+
+.item{
+    background-color: rgb(197, 67, 193);
+    border: 3px solid black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* font-size: 1.4rem; */
+
+}
+
+
+
+
+@media (min-width: 760px) {
+
+    .container{
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #header {
+        grid-row-start: 1;
+        grid-column-start: 1;
+        grid-column-end: 4; /* 3 columns tak expand karega */
+    }
+    
+
+    .footer {
+        grid-row-start: 4;
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+    .sidebar {
+        grid-row-start: 2;
+        grid-row-end: 4;
+        grid-column-start: 1;
+    }
+
+    .content1 {
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+}
